@@ -1,0 +1,66 @@
+/*1 Style global */
+body {
+  margin: 0;
+  font-family: Arial, Roboto, sans-serif;
+  line-height: 1.6;
+  background-color: #f0f0f0;
+}
+
+/* 2 Mise en page principale */
+main {
+  width: 800px;
+  margin: 40px auto;
+  background-color: #ffffff;
+  padding: 40px;
+  border-radius: 50px;
+  box-shadow: 0 4px 15px rgba(0, 0, 0, 0.08);
+}
+
+/* 3. En-tête et menu */
+h1 {
+  text-align: center;
+  padding: 20px 0;
+}
+
+nav {
+  padding: 10px;
+  justify-content: center;
+  display: flex;
+  gap: 20px;
+}
+a:hover {
+  color: #ff6600;
+  text-decoration: underline;
+}
+
+/* 4 Sections et articles */
+section {
+  margin-bottom: 20px;
+}
+
+section:last-of-type {
+  display: flex;
+  flex-wrap: wrap;
+  margin: 20px;
+  gap: 20px;
+}
+
+section:last-of-type h2 {
+  width: 100%;
+  margin-bottom: 10px;
+}
+
+section div {
+  flex: 1;
+  padding: 16px;
+  border-radius: 8px;
+  border: 1px solid #e1e4e8;
+  background-color: #f8f9fa;
+}
+
+/*6 Footer*/
+footer {
+  text-align: center;
+  padding: 20px;
+  color: #666;
+}

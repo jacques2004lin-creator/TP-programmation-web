@@ -1,0 +1,6 @@
+*.zip
+.env
+.env.*
+!.env.example
+TP5_LIN_Jacques/config.php
+TP6_LIN_Jacques/config.php

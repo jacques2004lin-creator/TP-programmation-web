@@ -1,0 +1,216 @@
+<!doctype html>
+<html lang="fr">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>L'atelier du café</title>
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="index.css" />
+    <script src="contact.js"></script>
+  </head>
+
+  <body>
+    <nav class="navbar navbar-expand-lg navbar-custom sticky-top">
+      <div class="container">
+        <a class="navbar-brand" href="index.html">L'Atelier</a>
+        <button
+          class="navbar-toggler bg-light"
+          type="button"
+          data-bs-toggle="collapse"
+          data-bs-target="#navbarNav"
+        >
+          <span class="navbar-toggler-icon"></span>
+        </button>
+        <div
+          class="collapse navbar-collapse justify-content-end"
+          id="navbarNav"
+        >
+          <ul class="navbar-nav">
+            <li class="nav-item">
+              <a class="nav-link" href="index.html">Accueil</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="service.html">Nos services</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link active" href="about.html"
+                >L'Esprit de l'Atelier</a
+              >
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="contact.html">Contact</a>
+            </li>
+          </ul>
+        </div>
+      </div>
+    </nav>
+
+    <header class="hero-section" style="padding: 60px 0">
+      <div class="container">
+        <h1 class="display-4">Contactez-nous</h1>
+        <p class="lead mt-3">
+          <em
+            >Une question, une commande spéciale ou envie de collaborer avec
+            nous ?</em
+          >
+        </p>
+      </div>
+    </header>
+
+    <main class="container py-5">
+      <div class="row g-5">
+        <div class="col-lg-5">
+          <h2 class="h3 fw-bold mb-4">Passez nous voir</h2>
+          <p class="text-muted mb-4">
+            Notre équipe est à votre disposition pour toute demande. Remplissez
+            le formulaire et nous vous répondrons dans les plus brefs délais,
+            généralement sous 24 heures.
+          </p>
+
+          <div class="mb-4">
+            <h3 class="h5 fw-bold">Notre adresse</h3>
+            <p class="text-muted mb-0">
+              L'Atelier de Café<br />
+              Rue de l'imagination<br />
+              75000 Paris
+            </p>
+          </div>
+
+          <div class="mb-4">
+            <h3 class="h5 fw-bold">Heures d'ouverture</h3>
+            <p class="text-muted mb-0">
+              Lundi - Vendredi : 08h00 - 18h00<br />
+              Samedi : 09h00 - 19h00<br />
+              Dimanche : Fermé
+            </p>
+          </div>
+
+          <div>
+            <h3 class="h5 fw-bold">Contact direct</h3>
+            <p class="text-muted mb-0">
+              Tél :
+              <a href="tel:+33100000000" class="text-decoration-none text-dark"
+                >01 00 00 00 00</a
+              ><br />
+              Email :
+              <a
+                href="mailto:bonjour@atelierdecafe.fr"
+                class="text-decoration-none text-dark"
+                >bonjour@atelierdecafe.fr</a
+              >
+            </p>
+          </div>
+        </div>
+
+        <div class="col-lg-7">
+          <div class="p-4 border border-dark shadow-sm bg-white">
+            <h2 class="h4 fw-bold mb-4">Envoyez-nous un message</h2>
+
+            <div
+              id="successMessage"
+              class="alert alert-success d-none mb-4"
+              role="alert"
+            >
+              Nous avons bien reçu votre demande et nous vous répondrons très
+              vite.
+            </div>
+
+            <form id="contactForm" novalidate>
+              <div class="mb-3">
+                <label for="nom" class="form-label fw-semibold"
+                  >Nom complet <span class="text-danger">*</span></label
+                >
+                <input
+                  type="text"
+                  class="form-control rounded-0"
+                  id="nom"
+                  placeholder="Jacques LIN"
+                  required
+                />
+                <div class="invalid-feedback">
+                  Veuillez renseigner votre nom.
+                </div>
+              </div>
+
+              <div class="mb-3">
+                <label for="email" class="form-label fw-semibold"
+                  >Adresse e-mail <span class="text-danger">*</span></label
+                >
+                <input
+                  type="email"
+                  class="form-control rounded-0"
+                  id="email"
+                  placeholder="jacques2004lin@gmail.com"
+                  required
+                />
+                <div class="invalid-feedback">
+                  veuillez renseigner une adresse e-mail.
+                </div>
+              </div>
+
+              <div class="mb-3">
+                <label for="sujet" class="form-label fw-semibold"
+                  >Sujet <span class="text-danger">*</span></label
+                >
+                <input
+                  type="text"
+                  class="form-control rounded-0"
+                  id="sujet"
+                  placeholder="De quoi s'agit-il ?"
+                  required
+                />
+                <div class="invalid-feedback">
+                  veuillez indiquer le sujet de votre message.
+                </div>
+              </div>
+
+              <div class="mb-4">
+                <label for="message" class="form-label fw-semibold"
+                  >Votre message <span class="text-danger">*</span></label
+                >
+                <textarea
+                  class="form-control rounded-0"
+                  id="message"
+                  rows="5"
+                  placeholder="Comment pouvons-nous vous aider ?"
+                  required
+                ></textarea>
+                <div class="invalid-feedback">
+                  veuillez écrire votre message avant de l'envoyer.
+                </div>
+              </div>
+
+              <button
+                type="submit"
+                class="btn btn-dark w-100 py-3 rounded-0 text-uppercase fw-bold"
+              >
+                envoyer le message
+              </button>
+            </form>
+          </div>
+        </div>
+      </div>
+    </main>
+
+    <footer id="contact">
+      <div class="container">
+        <h2 class="h4 mb-4">Nous trouver</h2>
+        <address class="mb-4 fst-normal">
+          <strong>L'Atelier de Café</strong><br />
+          Rue de l'imagination<br />
+          75000 Paris<br /><br />
+          Tél : <a href="tel:+33100000000">01 00 00 00 00</a><br />
+          Email :
+          <a href="mailto:atelierducafé@gmail.com">atelierducafé@gmail.com</a>
+        </address>
+        <p class="mb-0 small">
+          © 2026 L'Atelier du Café - Tous droits réservés.
+        </p>
+      </div>
+    </footer>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"></script>
+  </body>
+</html>

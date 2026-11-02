@@ -1,0 +1,32 @@
+<!doctype html>
+<html lang="fr">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+  </head>
+  <body>
+    <H1>authentification</H1>
+    <form action="/connexion" method="POST">
+      <div>
+        <label for="nomutilisateur">Nom d'utilisateur</label>
+        <input
+          type="text"
+            id="nomutilisateur"
+            name="username"
+            placeholder="Entre ton nom d'utilisateur"
+        />
+      </div>
+        <label for="motdepasse">Mot de passe</label>
+        <input
+          type="password"
+          id="motdepasse"
+          name="password"
+          placeholder="Entre ton mot de passe"
+        />
+      </div>
+      <button type="reset">Réinitialiser</button>
+      <button type="submit" disabled>valider</button>
+    </form>
+  </body>
+</html>

@@ -1,0 +1,138 @@
+<!doctype html>
+<html lang="fr">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+  </head>
+  <body>
+    <form action="/connexion" method="POST" enctype="multipart/form-data">
+      <fieldset>
+        <legend>Vos coordonnées</legend>
+        <table>
+          <tr>
+            <td><label for="nom">Nom :</label></td>
+            <td>
+              <input type="text" id="nom" name="nom" placeholder="votre nom" />
+            </td>
+          </tr>
+          <tr>
+            <td><label for="prenom">Prénom :</label></td>
+            <td>
+              <input
+                type="text"
+                id="prenom"
+                name="prenom"
+                placeholder="votre prénom"
+              />
+            </td>
+          </tr>
+          <tr>
+            <td><label for="naissance">Date de naissance :</label></td>
+            <td><input type="date" id="naissance" name="date_naissance" /></td>
+          </tr>
+          <tr>
+            <td><label for="mail">Mail :</label></td>
+            <td>
+              <input
+                type="email"
+                id="mail"
+                name="mail"
+                placeholder="votre mail"
+              />
+            </td>
+          </tr>
+          <tr>
+            <td><label for="site">Votre site :</label></td>
+            <td>
+              <input
+                type="text"
+                id="site"
+                name="site"
+                placeholder="votre adresse"
+              />
+            </td>
+          </tr>
+          <tr>
+            <td><label for="code">Code :</label></td>
+            <td>
+              <input
+                type="text"
+                id="code"
+                name="code"
+                placeholder="votre code postal"
+              />
+            </td>
+          </tr>
+          <tr>
+            <td><label>Genre :</label></td>
+            <td>
+              <input type="radio" id="homme" name="genre" value="homme" />
+              <label for="homme">Homme</label>
+              <br />
+              <input type="radio" id="femme" name="genre" value="femme" />
+              <label for="femme">Femme</label>
+            </td>
+          </tr>
+          <tr>
+            <td><label for="pays">Pays :</label></td>
+            <td>
+              <select id="pays" name="pays">
+                <option value="" disabled selected>Votre pays</option>
+                <optgroup label="Europe">
+                  <option value="fr">France</option>
+                  <option value="be">Belgique</option>
+                  <option value="ch">Suisse</option>
+                </optgroup>
+                <optgroup label="Afrique">
+                  <option value="tn">Tunisie</option>
+                  <option value="dz">Algérie</option>
+                  <option value="ma">Maroc</option>
+                </optgroup>
+                <optgroup label="Amérique">
+                  <option value="ca">Canada</option>
+                  <option value="us">États-Unis</option>
+                </optgroup>
+              </select>
+            </td>
+          </tr>
+        </table>
+      </fieldset>
+
+      <fieldset>
+        <legend>Vos goûts</legend>
+        <div>
+          <input type="checkbox" id="gout1" name="gouts[]" value="fraises" />
+          <label for="gout1">Tarte aux fraises à la crème d'amandes</label>
+        </div>
+        <div>
+          <input type="checkbox" id="gout2" name="gouts[]" value="prunes" />
+          <label for="gout2">Tarte aux prunes</label>
+        </div>
+        <div>
+          <input type="checkbox" id="gout3" name="gouts[]" value="mirabelles" />
+          <label for="gout3"
+            >Tarte rustique aux mirabelles de Lorraine, noisettes et miel</label
+          >
+        </div>
+        <div>
+          <textarea
+            name="description_gouts"
+            placeholder="Décrivez vos goûts en détail"
+          ></textarea>
+        </div>
+      </fieldset>
+
+      <fieldset>
+        <legend>Envoyez nous votre photo</legend>
+        <div>
+          <input type="file" name="photo" />
+        </div>
+        <div>
+          <input type="reset" value="Effacer" />
+          <input type="submit" value="Envoyer" />
+        </div>
+      </fieldset>
+    </form>
+  </body>
+</html>

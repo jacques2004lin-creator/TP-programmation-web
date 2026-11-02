@@ -1,0 +1,110 @@
+:root {
+  --black: #0a0a0a;
+  --white: #fdfdfd;
+  --grey: #e0e0e0;
+}
+
+body {
+  background-color: var(--white);
+  color: var(--black);
+  font-family: "Helvetica Neue", Arial, sans-serif;
+}
+
+h1,
+h2,
+h3 {
+  text-transform: uppercase;
+  font-weight: 700;
+  letter-spacing: 1.5px;
+}
+
+.navbar-custom {
+  background-color: var(--black);
+  border-bottom: 3px solid var(--black);
+}
+
+.navbar-custom .nav-link,
+.navbar-custom .navbar-brand {
+  color: var(--white) !important;
+  text-transform: uppercase;
+  font-weight: bold;
+  transition: color 0.3s ease;
+}
+
+.navbar-custom .nav-link:hover {
+  color: #b0b0b0 !important;
+}
+
+.hero-section {
+  background-color: var(--black);
+  color: var(--white);
+  padding: 80px 0;
+  text-align: center;
+}
+
+section {
+  padding: 60px 0;
+  border-bottom: 1px solid var(--grey);
+}
+
+.table-bw {
+  border: 2px solid var(--black);
+}
+
+.table-bw th {
+  background-color: var(--black);
+  color: var(--white);
+  text-transform: uppercase;
+}
+
+.table-bw td {
+  vertical-align: middle;
+  border-color: var(--black);
+}
+
+.btn-custom {
+  background-color: var(--black);
+  color: var(--white);
+  border: 2px solid var(--black);
+  border-radius: 0;
+  text-transform: uppercase;
+  font-weight: bold;
+  transition: all 0.3s ease;
+}
+
+.btn-custom:hover {
+  background-color: var(--white);
+  color: var(--black);
+}
+
+.form-control {
+  border: 1px solid var(--black);
+  border-radius: 0;
+}
+
+.form-control:focus {
+  box-shadow: none;
+  border-color: var(--black);
+  background-color: #f9f9f9;
+}
+
+footer {
+  background-color: var(--black);
+  color: var(--white);
+  padding: 40px 0;
+  text-align: center;
+}
+
+footer a {
+  color: var(--white);
+  text-decoration: underline;
+}
+
+footer a:hover {
+  color: #b0b0b0;
+}
+
+.img-coffee {
+  object-fit: cover;
+  border: 1px solid var(--black);
+}
