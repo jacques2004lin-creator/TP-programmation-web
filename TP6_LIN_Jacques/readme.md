@@ -23,7 +23,7 @@ Importez la structure des tables en exécutant le fichier sql/schema.sql.
 Importez les données fictives de démonstration en exécutant le fichier.
 
 Configuration de la connexion PDO :
-Le fichier `config.php`, exclu du dépôt public car il contient les identifiants locaux, doit être créé localement avec les paramètres de votre base de données (hôte `db`, base `atelier_cafe`, utilisateur et mot de passe MySQL).
+Le fichier `db.php` gère la connexion à la base de données (compatible automatiquement en local sous Docker et en production comme InfinityFree).
 
 Lancement de l'application :
 Ouvrez votre navigateur et accédez à l'URL locale du projet :

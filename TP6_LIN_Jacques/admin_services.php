@@ -6,7 +6,7 @@ if (!isset($_SESSION['admin_id'])) {
     exit;
 }
 
-require_once 'config.php';
+require_once 'db.php';
 
 $message_action = '';
 

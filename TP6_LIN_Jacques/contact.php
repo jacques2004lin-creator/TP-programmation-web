@@ -1,5 +1,5 @@
 <?php
-require_once 'config.php';
+require_once 'db.php';
 
 // initialisation de la variable de message
 $message_contact = '';

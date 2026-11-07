@@ -1,5 +1,5 @@
 <?php
-require_once 'config.php';
+require_once 'db.php';
 
 // récupération des boissons de la catégorie 1 (Les Classiques)
 $stmtClassiques = $pdo->query("SELECT * FROM services WHERE category_id = 1");

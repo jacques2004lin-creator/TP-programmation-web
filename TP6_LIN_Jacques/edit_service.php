@@ -7,7 +7,7 @@ if (!isset($_SESSION['admin_id'])) {
     exit;
 }
 
-require_once 'config.php';
+require_once 'db.php';
 
 // vérifier qu'un ID de boisson a bien été fourni
 if (!isset($_GET['id']) || empty($_GET['id'])) {

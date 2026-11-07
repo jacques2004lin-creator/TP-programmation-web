@@ -6,7 +6,7 @@ if (!isset($_SESSION['admin_id'])) {
     exit;
 }
 
-require_once 'config.php';
+require_once 'db.php';
 
 $stmtReservations = $pdo->query("SELECT * FROM reservations ORDER BY date_heure DESC LIMIT 10");
 $reservations = $stmtReservations->fetchAll();

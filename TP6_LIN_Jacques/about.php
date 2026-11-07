@@ -1,5 +1,5 @@
 <?php
-require_once 'config.php';
+require_once 'db.php';
 
 // récupération de tous les contenus liés à la page 'about'
 $stmt = $pdo->prepare("SELECT section, titre, contenu_texte FROM pages_content WHERE page_nom = 'about'");

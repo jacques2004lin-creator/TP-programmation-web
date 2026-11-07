@@ -1,5 +1,5 @@
 <?php
-require_once 'config.php';
+require_once 'db.php';
 
 // traitement du formulaire de réservation
 $message_reservation = '';

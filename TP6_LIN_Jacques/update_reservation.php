@@ -6,7 +6,7 @@ if (!isset($_SESSION['admin_id'])) {
     exit;
 }
 
-require_once 'config.php';
+require_once 'db.php';
 
 // vérification des paramètres envoyés dans l'URL ID de la réservation et action souhaitée
 if (isset($_GET['id']) && isset($_GET['action'])) {

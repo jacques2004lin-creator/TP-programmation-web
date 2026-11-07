@@ -2,7 +2,7 @@
 // démarrage de la session (doit toujours être la première instruction)
 session_start();
 
-require_once 'config.php';
+require_once 'db.php';
 
 // si l'administrateur est déjà connecté, on le redirige vers le tableau de bord
 if (isset($_SESSION['admin_id'])) {
