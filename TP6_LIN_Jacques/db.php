@@ -16,13 +16,12 @@ if (strpos($host, 'localhost') !== false || strpos($host, '127.0.0.1') !== false
     $password   = "root";
 } else {
     // -------------------------------------------------------------
-    // Configuration InfinityFree
-    // Remplacer avec les informations indiquées dans votre espace client InfinityFree :
+    // Configuration InfinityFree (Production)
     // -------------------------------------------------------------
-    $servername = "sqlXXX.infinityfree.com";        // MySQL Hostname (ex: sql123.infinityfree.com)
-    $dbname     = "if0_XXXXXXXX_atelier_cafe";       // Nom complet de la BDD (ex: if0_38123456_atelier_cafe)
-    $username   = "if0_XXXXXXXX";                   // MySQL Username (ex: if0_38123456)
-    $password   = "VOTRE_MOT_DE_PASSE";             // MySQL Password (votre mot de passe de compte)
+    $servername = "sql213.infinityfree.com";
+    $dbname     = "if0_43376768_atelier_cafe";
+    $username   = "if0_43376768";
+    $password   = "bm3QJv1l6xM";
 }
 
 $charset = "utf8mb4";
